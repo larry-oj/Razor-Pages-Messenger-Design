@@ -117,6 +117,19 @@ body h2 {
 .root .chat {
   width: 600px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.root .chat .chat-none {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "No chat selected";
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -146,5 +146,20 @@ body {
     .chat {
         width: calc($window-width * 0.6);
         height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        .chat-none {
+            background-color: $light-shades;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "No chat selected";
+        }
     }
 }
