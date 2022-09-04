@@ -109,9 +109,13 @@ body {
                     }
                 
                     p {
+                        width: 250px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         font-size: $text-size;
                         margin: 0 0 0 0;
-                        color: $dark-tints
+                        color: $dark-tints;
                     }
                 }
 

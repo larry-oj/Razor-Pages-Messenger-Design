@@ -89,6 +89,10 @@ body {
   margin: 0 0 0 0;
 }
 .root .menu .menu-items .menu-item .menu-item-data p {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 14pt;
   margin: 0 0 0 0;
   color: #8c8fa0;
