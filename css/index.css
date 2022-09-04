@@ -34,6 +34,28 @@ body {
   outline: 2px solid black;
   background-color: #dfe1f8;
 }
+.root .menu .menu-header {
+  height: 60px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.root .menu .menu-header h1 {
+  font-size: 16pt;
+  font-weight: 900;
+}
+.root .menu .menu-items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
 .root .chat {
   width: 600px;
   height: 100%;
