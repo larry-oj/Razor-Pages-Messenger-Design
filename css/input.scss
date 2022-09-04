@@ -20,6 +20,7 @@ $default-gap: 10px;
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: $text-size;
     background-color: $light-shades;
     color: $dark-shades;
     height: 100vh;
@@ -28,6 +29,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    h2 {
+        font-size: $name-size;
+        font-weight: 600;
+    }
 }
 
 .root {
@@ -103,8 +109,6 @@ body {
                     width: 100%;
 
                     h2 {
-                        font-size: $name-size;
-                        font-weight: 600;
                         margin: 0 0 0 0;
                     }
                 
