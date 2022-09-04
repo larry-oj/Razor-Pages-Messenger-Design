@@ -1,0 +1,41 @@
+$light-shades: white;
+$light-tints: #d2d3e8;
+$main-color: #0099ff;
+$main-tints: #dfe1f8;
+$dark-shades: #000000;
+$dark-tints: #8c8fa0;
+
+$window-height: 800px;
+$window-width: 1000px;
+
+$name-size: 16pt;
+$text-size: 14pt;
+
+$default-gap: 10px;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $light-shades;
+    color: $dark-shades;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.root {
+    height: 800px;
+    width: 1000px;
+    outline: 3px solid $dark-shades;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
