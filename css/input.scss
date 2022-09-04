@@ -74,6 +74,64 @@ body {
             align-items: center;
             overflow-y: auto;
 
+            .menu-item {
+                height: 60px;
+                width: calc(100% - 20px);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-shrink: 0;
+                gap: $default-gap;
+                padding: $default-gap;
+                cursor: pointer;
+
+                .user-avatar {
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(94, 199, 234);
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                }
+
+                .menu-item-data {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    height: 100%;
+                    width: 100%;
+
+                    h2 {
+                        font-size: $name-size;
+                        font-weight: 600;
+                        margin: 0 0 0 0;
+                    }
+                
+                    p {
+                        font-size: $text-size;
+                        margin: 0 0 0 0;
+                        color: $dark-tints
+                    }
+                }
+
+                .menu-item-notification {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    visibility: hidden;
+                    flex-shrink: 0;
+                }
+
+                .menu-item-notification.active {
+                    visibility: visible;
+                    background-color: $main-color;
+                }
+            }
+
+            .menu-item.selected {
+                background-color: $light-tints;
+            }
         }
     }
     
