@@ -73,13 +73,6 @@ body h2 {
   padding: 10px;
   cursor: pointer;
 }
-.root .menu .menu-items .menu-item .user-avatar {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(94, 199, 234);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
 .root .menu .menu-items .menu-item .menu-item-data {
   display: flex;
   flex-direction: column;
@@ -130,6 +123,28 @@ body h2 {
   justify-content: center;
   align-items: center;
   content: "No chat selected";
+}
+.root .chat .chat-header {
+  height: 60px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  outline: 2px solid black;
+}
+.root .chat .chat-header h1 {
+  font-size: 16pt;
+  font-weight: 900;
+}
+.root .user-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(94, 199, 234);
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
