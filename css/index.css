@@ -19,6 +19,10 @@ body h2 {
   font-weight: 600;
 }
 
+p {
+  margin: 0 0 0 0;
+}
+
 .root {
   height: 800px;
   width: 1000px;
@@ -36,7 +40,6 @@ body h2 {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  outline: 2px solid black;
   background-color: #dfe1f8;
 }
 .root .menu .menu-header {
@@ -111,6 +114,7 @@ body h2 {
   width: 600px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -133,11 +137,83 @@ body h2 {
   gap: 10px;
   align-items: center;
   padding: 10px;
-  outline: 2px solid black;
 }
 .root .chat .chat-header h1 {
   font-size: 16pt;
   font-weight: 900;
+}
+.root .chat .chat-messages {
+  background-color: white;
+  height: 640px;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+.root .chat .chat-messages .message {
+  flex-shrink: 0;
+  width: calc(100% - 20px);
+  min-height: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+}
+.root .chat .chat-messages .message .message-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 70%;
+  min-width: 10%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #0099ff;
+  color: white;
+}
+.root .chat .chat-messages .message .message-data .message-data-time {
+  width: 100%;
+  font-size: 11pt;
+  text-align: end;
+}
+.root .chat .chat-messages .message.opponent {
+  align-items: flex-start;
+}
+.root .chat .chat-messages .message.opponent .message-data {
+  background-color: #d2d3e8;
+  color: #000000;
+}
+.root .chat .chat-messages .message.opponent .message-data .message-data-time {
+  color: #8c8fa0;
+}
+.root .chat .chat-send {
+  height: 60px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.root .chat .chat-send .chat-send-input {
+  width: 80%;
+  height: 100%;
+  resize: none;
+  font-size: 14pt;
+}
+.root .chat .chat-send .chat-send-button {
+  width: 20%;
+  height: 100%;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
 .root .user-avatar {
   width: 50px;
