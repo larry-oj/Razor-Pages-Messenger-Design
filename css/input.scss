@@ -21,7 +21,7 @@ $default-gap: 10px;
 body {
     font-family: 'Roboto', sans-serif;
     font-size: $text-size;
-    background-color: $light-shades;
+    background-color: $main-color;
     color: $dark-shades;
     height: 100vh;
     width: 100vw;
@@ -167,6 +167,7 @@ p {
             gap: $default-gap;
             align-items: center;
             padding: $default-gap;
+            background-color: $light-shades;
     
             h1 {
                 font-size: $name-size;
@@ -239,6 +240,7 @@ p {
             justify-content: center;
             align-items: center;
             gap: $default-gap;
+            background-color: $light-shades;
 
             .chat-send-input {
                 width: 80%;

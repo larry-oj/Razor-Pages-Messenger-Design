@@ -5,7 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14pt;
-  background-color: white;
+  background-color: #0099ff;
   color: #000000;
   height: 100vh;
   width: 100vw;
@@ -137,6 +137,7 @@ p {
   gap: 10px;
   align-items: center;
   padding: 10px;
+  background-color: white;
 }
 .root .chat .chat-header h1 {
   font-size: 16pt;
@@ -200,6 +201,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: white;
 }
 .root .chat .chat-send .chat-send-input {
   width: 80%;
